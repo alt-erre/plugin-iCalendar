@@ -1,0 +1,22 @@
+{
+    "id" : "iCalendar",
+    "name" : "iCalendar",
+    "description" : "Synchronisation de vos calendriers ical/caldev dans Jeedom pour le déclenchement d'évènements",
+    "licence" : "AGPL",
+    "author" : "A.Barrau / Alterre",
+    "require" : "4.0",
+    "category" : "organization",
+    "hasDependency" : true,
+    "maxDependencyInstallTime" : 0,
+    "hasOwnDeamon" : false,
+    "documentation": "https://abarrau.github.io/jeedom-plugins-doc/iCalendar/",
+    "changelog": "https://abarrau.github.io/jeedom-plugins-doc/iCalendar/?changelog",
+    "documentation_beta": "https://abarrau.github.io/jeedom-plugins-doc/iCalendar/",
+    "changelog_beta": "https://abarrau.github.io/jeedom-plugins-doc/iCalendar/?changelog",
+    "language" : ["fr_FR"],
+    "compatibility" : ["miniplus","smart","rpi","docker","diy","v4"],
+    "display" : "panel",
+    "issue": "https://github.com/abarrau/jeedom-plugins-doc/issues/",
+    "_oT_pluginVersion" : "1.6.2",
+    "_oT_toolsVersion" : "1.18"
+}

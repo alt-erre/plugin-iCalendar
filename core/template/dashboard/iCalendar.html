@@ -1,0 +1,59 @@
+<script language="javascript">
+if (typeof _iCal_txtCollecteDate === 'undefined') {
+	var _iCal_txtCollecteDate = '#txtCollecteDate#';
+	var _iCal_txtValueDate = '#txtValueDate#';
+	var _iCal_txtView = '#txtView#';
+	var _iCal_txtGotoAG = '#txtGotoAG#';
+	var _iCal_txtScenario = '#txtScenario#';
+	var _iCal_txtAction = '#txtAction#';
+	var _iCal_txtNotActSc = '#txtNotActSc#';
+	var _iCal_txtExecTS = "#txtExecTS#";
+	var _iCal_txtErrorNotMinHeight = "#txtErrorNotMinHeight#";
+	var _iCal_txtEventActif = "#txtEventActif#";
+	var _iCal_txtFirstMin = "#txtFirstMin#";
+	var _iCal_txtLastMin = "#txtLastMin#";
+	var _iCal_txtListAct = "#txtListAct#";
+	var _iCal_txtActive = "#txtActive#";
+	var _iCal_txtDesactive = "#txtDesactive#";
+}
+if (typeof _iCal_selectedDay === 'undefined') var _iCal_selectedDay = [];
+var _iCal_MaxSize = [];
+$.include(['core/php/getResource.php?file=plugins/iCalendar/core/template/dashboard/iCalendar.js'], function() { });
+</script>
+
+<style>
+.iCalendar_dashboard {	font-size:13px; }
+.iCalendar_title {		font-size:1.5em; }
+.iCalendar_div .tooltips {	padding:2px 2px 0px 2px; margin:2px 5px 8px 5px; background-color:#FFFFFF; min-width:250px; border-radius:4px; border:1px solid #DDD; }
+.iCalendar_viewHorizontal {	float:left; width:280px; }
+.iCalendar_calSelectDay {	height:22px; padding:4px 1px; text-align:center; }
+.iCalendar_day {		padding:1px 9px; font-size:12px; margin-right:5px; opacity:0.4; background-color:#777777; color:#FFFFFF; }
+.iCalendar_day.iCalSelected {	opacity:1; padding-bottom:3px; }
+.iCalendar_calTitle {	height:22px; padding:2px; background-color:#777777; color:#FFFFFF; border-radius:3px; }
+.iCalendar_calTitleDay {	margin-top:1px; opacity:0.7; border-color:#777777; font-size:12px; padding-left:10px; }
+.iCalendar_calTitleTxt {	font-size:14px; }
+.iCalendar_items {		color:#666666; padding:1px 2px 1px 6px; }
+.iCalendar_itemBorder {	padding-bottom:5px; border-bottom:1px solid #DDDDDD; }
+.iCalendar_itemActif {		padding:3px 0px; }
+.iCalendar_itemInactif {	padding:3px 0px; font-style:italic; color:#BBBBBB; }
+.iCalendar_nbEvent {	font-style:italic; padding-left:3px; font-size:11px; }
+.iCalendar_zoneListAct {	position:absolute; left:10px; width:94%; z-index:100; border:1px solid #777777; background-color:#FFFFFF; border-radius:3px; box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
+.iCalendar_titleListAct {	font-size:12px; color:#FFFFFF; padding:2px 5px; margin:1px; background-color:#777777; border-radius:3px; }
+.iCalendar_listAct {	font-size:12px; padding: 0px 4px; }
+</style>
+
+<div class="eqLogic-widget eqLogic allowResize iCalendar_dashboard" data-version="#version#"  style="width:#width#;border:#border#;border-radius:#border-radius#;height:#height#;background-color:#background-color#;color:#color#;#style#" data-eqLogic_id="#id#" data-category="#category#" data-eqLogic_uid="#uid#" >
+    <center class="widget-name">
+		<a href="#eqLink#" class="reportModeHidden iCalendar_title" style="#hideEqLogicName#">#name_display# <span style="font-size:0.85em;" class="object_name">#object_name#</span></a>
+    </center>
+    <center><div class="iCalendar_date">#today#</div></center>
+	<div class='iCalendar_div'>
+		<div class='tooltips' style="color:#000000;"><center>... setup ...</center></div>
+	</div>
+	<script>
+		var _iCalendar#id# = #iCalendar-list#;
+		var _iCalendar#id#_allowAutoResize = #allowAutoResize#;
+		iCal_refreshWidget('#id#',_iCalendar#id#);
+		iCal_setCSSOption('#id#','','#bgTitleColor#','#bgItemColor#','#background-color#','#color#');	// A SUPPRIMER LORSQUE FULL V4 //
+	</script>
+</div>
