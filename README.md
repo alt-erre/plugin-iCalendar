@@ -9,6 +9,10 @@
 - **Auteur original** : A. Barrau
 - **Modifications & maintenance** : Alterre
 
+### Licence :
+- Ce plugin est distribué sous licence libre **GNU Affero General Public License v3.0 (AGPLv3)**.
+- Consultez le fichier [LICENSE](LICENSE) pour le texte intégral.
+
 ### Documentation : 
 - https://abarrau.github.io/jeedom-plugins-doc/iCalendar/
 
